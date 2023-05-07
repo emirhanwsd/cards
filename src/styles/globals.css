@@ -17,6 +17,12 @@
     font-feature-settings: "cv02", "cv03", "cv04", "cv11" !important;
 }
 
-html, body {
-    color-scheme: dark;
+html, body, #__next {
+    @apply bg-white dark:bg-slate-900 text-gray-500 dark:text-slate-400;
+}
+
+@media (prefers-color-scheme: dark) {
+    html, body {
+        color-scheme: dark;
+    }
 }
